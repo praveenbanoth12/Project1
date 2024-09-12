@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><!-- <html class="no-js" lang="en"> --><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>DelveIP</title>
+  <link rel="shortcut icon" href="images/Delvelogo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main-style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+        <link rel="stylesheet" href="css/style1.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzIz6fpcy3vAUNOt-voKM2G0ULIc5mV9c&libraries=places&callback=initMap" ></script>
+        <style>
+        
+        .dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
+#services-x .container .row > span{
+  color: #fff;
+}
+#services-x{
+  margin-top: -10px;
+}
+#foo{
+  background: url("images/footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+@media (min-width: 1024px) and (max-width: 1366px){
+
+}
+@media (min-width: 360px) and (max-width: 820px){
+  
+}
+ </style>
+</head>
+<body>
+        <!-- Fixed navbar -->
+        <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+     <div id="cont" class="container-fluid" style="padding-bottom: 10px;">
+        <div class="row">
+          <div class="col-md-3 col-xs-1" style="visibility: hidden;">Details</div>
+          <div class="col-md-3 col-xs-1" style="visibility: hidden;">Details</div>
+          <div class="col-md-6 col-xs-10">
+            <a href="mailto:info@delveip.com?Subject=Warm Regards From Delveip.&cc= &bcc= " target="_top"> <i class="fa fa-envelope pull-right" aria-hidden="true"  style="color: #000;"> <b> Email : info@delveip.com </b> </i> </a>
+            <a href="#"> <i class="fa fa-phone-square pull-right" aria-hidden="true"  style="color: #000;"> <b> Contact : +91-6300909054 </b> <span>||</span></i> </a>
+         </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+          <a class="navbar-brand" href="index.html"><img src="images/logo-1.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <!--dropdown-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+              <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                <!-- dropdown-->
+            <li class="dropdown-submenu">
+             <a tabindex="-1" href="ipr.html">IPR Services</a>
+              <ul class="dropdown-menu">
+               <li>
+                <a tabindex="-1" href="trademark.html">Trademark</a></li>
+             <!-- <li class="dropdown-submenu">
+                 <a href="#">Even More..</a>
+                 <ul class="dropdown-menu">
+                   <li><a href="#">3rd level</a></li>
+                   <li><a href="#">3rd level</a></li>
+                  </ul>
+               </li> 
+           -->
+              <li><a href="patent.html">Patent</a></li>
+          <li><a href="copyright.html">Copyright</a></li>
+             </ul>
+           </li> 
+           <!-- dropdown-->
+           <li class="dropdown-submenu">
+             <a tabindex="-1" href="#">Corporate Services</a>
+              <ul class="dropdown-menu">
+               <li><a tabindex="-1" href="#">Company<br>Incorporation</a></li>
+            <!-- <li class="dropdown-submenu">
+                 <a href="#">Even More..</a>
+                 <ul class="dropdown-menu">
+                   <li><a href="#">3rd level</a></li>
+                   <li><a href="#">3rd level</a></li>
+                  </ul>
+               </li> 
+           -->
+              <li><a href="#">LLP Services</a></li>
+          <li><a href="#">Project Reports</a></li>
+          <li><a href="#">IEC Codes</a></li>
+             </ul>
+           </li>
+            <!-- dropdown-->
+            <li class="dropdown-submenu">
+             <a tabindex="-1" href="#">Registration Services</a>
+              <ul class="dropdown-menu">
+               <li><a tabindex="-1" href="#">Partership Firm <br>Registration</a></li>
+          <!-- <li class="dropdown-submenu">
+                 <a href="#">Even More..</a>
+                 <ul class="dropdown-menu">
+                   <li><a href="#">3rd level</a></li>
+                   <li><a href="#">3rd level</a></li>
+                  </ul>
+               </li> 
+           -->
+            <li><a href="#">Labour Registration</a></li>
+          <li><a href="#">SME Registration</a></li>
+          <li><a href="#">PF Registration</a></li>
+          <li><a href="#">ESI Registration</a></li>
+          <li><a href="#">Professional Tax<br>Registration</a></li>
+          <li><a href="#">GST Registration</a></li>
+             </ul>
+           </li>
+           <!-- dropdown-->
+           <li class="dropdown-submenu">
+             <a tabindex="-1" href="#">Supporting Services</a>
+              <ul class="dropdown-menu">
+               <li><a tabindex="-1" href="#">PF</a></li>
+             <!-- <li class="dropdown-submenu">
+                 <a href="#">Even More..</a>
+                 <ul class="dropdown-menu">
+                   <li><a href="#">3rd level</a></li>
+                   <li><a href="#">3rd level</a></li>
+                  </ul>
+               </li> 
+           -->
+              <li><a href="#">PT</a></li>
+          <li><a href="#">GST</a></li>
+          <li><a href="#">ESI</a></li>
+          <li><a href="#">TDS RETURNS On<br>Monthly Basis</a></li>
+
+             </ul>
+           </li>
+           <!-- dropdown-->
+           <li class="dropdown-submenu">
+             <a tabindex="-1" href="#">Filings</a>
+              <ul class="dropdown-menu">
+               <li><a tabindex="-1" href="#">Tax Audits Reports</a></li>
+          <!-- <li class="dropdown-submenu">
+                 <a href="#">Even More..</a>
+                 <ul class="dropdown-menu">
+                   <li><a href="#">3rd level</a></li>
+                   <li><a href="#">3rd level</a></li>
+                  </ul>
+               </li> 
+           -->
+              <li><a href="#">Income Tax<br>Return Filing</a></li>
+          <li><a href="#">Roc Filings</a></li>
+             </ul>
+           </li>
+           <!-- dropdown--><!-- dropdown-->
+            </ul>
+            </li>
+
+            <li><a href="contact.html">Contact</a></li>
+             <li><a href="getaquote.html">Get a quote</a></li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!--Navigation end-->
+<!-- 
+<div>
+                    <h1 class="text-center" style="color: black;margin-top: 150px;font-size: 40px;"><b>Reach Our Offices At</b></h1>
+               
+</div> -->
+
+<section id="services-x">
+            <div class="container text-center" >
+                <div class="row pull-left" style="padding-top: 37px;float: left">
+                    <a href="index.html" style="color: #fff;">  Home  </a><a href="index.html">  >>  </a><span>  Contact  </span>
+                </div>
+            </div>
+    </section>
+
+<div class="con">
+        <div class="container-fluid ">
+
+    <section id="strip-1" style="margin:-25px auto;">
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center"><b>Reach Our Offices At</b></h1>
+                </div>
+            </div>
+        </div>
+     </section>
+   </div>
+
+
+
+<!-- <div class="container" style="margin-top: 100px; ">
+        <div class="row">
+            <div class="content" style="">
+                <div class="col-md-4">
+                    <div class="align-center">
+                        <h4 style="text-align: left"><b>Noida</b></h4>
+                        <div class="icon">
+
+                            <p class="contact-para">
+                              <i class="fa fa-home"></i>SF-17, 3rd floor,
+                            <br>
+                                Parsvnath Bibhab Plaza,<br>
+                                Commercial Belt, Alpha-1;<br>
+                                Greater Noida,<br>
+                                Gautam Buddha Nagar,<br>
+                                Uttar Pradesh-201308.<br>
+                                <i class="fa fa-phone"></i>+91 1204116654<br>
+                                <i class="fa fa-envelope">info@delveip.com</i>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!--<div class="wow flipInY" data-wow-offset="0" data-wow-delay="1.2s">-->
+                   <!--  <div class="align-center">
+                        <h4 style="text-align: left"><b>Hyderabad</b></h4>
+                        <div class="icon">
+                            <div class="icon">
+
+                                <p class="contact-para">
+                                    <i class="fa fa-home"></i>#1-98/9/3/23,3rd floor,
+                                <br>
+                                    Jaihind Enclave,<br>
+                                    Hi-tech City
+                                <br>
+                                    Madhapur,<br>
+                                    Hyderabad-500081,
+                                    Telangana<br>
+                                    <i class="fa fa-phone"></i>
+                                    +91 40 67172036<br>
+                                    <i class="fa fa-envelope">info@delveip.com</i>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="align-center">
+                        <h4 style="text-align: left"><b>Coimbatore</b></h4>
+                        <div class="icon">
+                           <p class="contact-para">
+                                <i class="fa fa-home"></i>
+
+                                No 6-1,<br>
+                                G.K.Sundaram Street,<br>
+                                K.K.Pudur,Saibaba colony,<br>
+                                Coimbatore,<br>
+                                Tamilnadu-641038.<br>
+
+                                <i class="fa fa-phone"></i>04 224952646<br>
+                                <i class="fa fa-envelope">info@delveip.com</i>
+                                <br>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div> --> 
+                <!-- <div class="col-md-4">
+                    <div class="align-center">
+                        <h4 style="text-align: left">New Delhi</h4>
+                        <div class="icon">
+
+                           <p class="contact-para">
+                                <i class="fa fa-home"></i>
+                                Level 2,
+                            <br>
+                                KLJ Tower North,<br>
+                                B5 District Centre,<br>
+                                Netaji Subhash Place,<br>
+                                Wazirpur,<br>
+                                New Delhi-110034<br>
+                                
+                                <i class="fa fa-envelope">info@delveip.com</i>
+                            </p>
+                        </div>
+
+                    </div>
+                </div> -->
+
+
+
+                
+           
+        <!-- <div class="row">
+            <div class="content">
+                <div class="col-md-4">
+                    <div class="align-center">
+                        <h4 style="text-align: left">Bangalore</h4>
+                        <div class="icon">
+                            <p class="contact-para">
+                                <i class="fa fa-home"></i>
+                                5-b 2nd Floor,<br>
+                                10th Cross,<br>
+                                RMV Extension,<br>
+                                Sadashivnagar,<br>
+                                Bangalore - 560080<br>
+                                
+                                <i class="fa fa-envelope">info@delveip.com</i>
+                                <br>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div> -->
+               
+            
+
+        <div id="app" class="container">
+    <!--<h2 style="margin-left: 10px"><i>Hyderabad</i></h2>-->
+  <card data-image="data:image/jpeg;base64,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">
+    <h4 slot="header"><div style="margin-left: 20px;font-size: 15px;"><h3 >Hyderabad</h3>
+       #1-98/9/3/23,3rd floor,
+                                <br>
+                                    Jaihind Enclave,<br>
+                                    Hi-tech City
+                                <br>
+                                    Madhapur,<br>
+                                    Hyderabad-500081,
+                                    Telangana<br>
+                                    +91 40 67172036<br>
+                                    <a href="www.gmail.com">info@delveip.com<br></a>
+                                    <br>
+                                     <br>
+                                      <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                    
+                                      
+                                    
+        <br>
+        </div>
+      </h4>
+  </card>
+  <card data-image="http://www.holidayiq.com/images/attractions/1347517102_8963.jpg" >
+    <h4 slot="header"><div style="margin-left: 20px;font-size: 15px;"><h3 >Noida</h3>
+        SF-17, 3rd floor,
+                           
+                                Parsvnath Bibhab Plaza,<br>
+                                Commercial Belt, Alpha-1;<br>
+                                Greater Noida,<br>
+                                Gautam Buddha Nagar,<br>
+                                Uttar Pradesh-201308.<br>
+                                +91 1204116654<br>
+                                 <a href="www.gmail.com">info@delveip.com<br></a>
+
+                                  <br>
+                                     <br>
+                                      <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                
+                                      
+
+        </div>
+      </h4>
+  </card>
+  <card data-image="data:image/jpeg;base64,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" >
+    <h4 slot="header" ><div style="margin-left: 10px;font-size: 15px;"><h3 >Coimbatore</h3>
+       No 6-1,<br>
+                                G.K.Sundaram Street,<br>
+                                K.K.Pudur,Saibaba colony,<br>
+                                Coimbatore,<br>
+                                Tamilnadu-641038.<br>
+
+                                04 224952646<br>
+                               <a href="https://www.gmail.com">info@delveip.com<br></a>
+
+                                  <br><br>
+                                      <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                       <br>
+                                        <br>
+        </div>
+    </h4>
+    
+  </card>
+ <!--  <card data-image="https://images.unsplash.com/photo-1479621051492-5a6f9bd9e51a?dpr=2&auto=compress,format&fit=crop&w=1199&h=811&q=80&cs=tinysrgb&crop=">
+    <h1 slot="header">Lakes</h1>
+    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </card> -->
+</div>
+ 
+
+
+
+
+
+
+        <div >
+        <div id="map" style="height: 400px; width: 100%;margin-top:20px; margin-bottom:20px;" class="wow flipInY" data-wow-duration="1s" data-wow-delay="1s  ">
+</div>
+<script type="text/javascript">
+    var locations = [
+      // ['<h5 style="color:black" ><b>Business Office</b></h5><p style="color:black">Ruchika Market,<br>Baramunda Housing Board Colony,Bhubaneswar,<br>Odisha-751003,</p>', 20.2898, 85.8051, 4],
+      // ['<h5 style="color:black"><b>Business Office</b><h5><p style="color:black">5-b 2nd Floor,<br>10th Cross,RMV Extension,<br>Sadashivnagar,Bangalore,<br>Karnataka - 560080</p>', 12.9716, 77.5946, 5],
+      ['<h5 style="color:black" ><b>Business Office</b></h5><p style="color:black">SF-17,3rd Floor,<br>Parsnath Bhihab Plaza,<br>Commercial Belt, Alpha-1; Gautam Buddha Nagar,<br>Greater Noida,Uttar Pradesh.201308<br></p>', 28.5355, 77.3910, 3],
+      // ['<h5 style="color:black">Chennai</h5>', 13.0827, 80.2707, 2],
+      ['<h5 style="color:black"><b>Development Center</b></h5> <p style="color:black;">H No 1-98/9/3/23, Plot No12E,<br>Jaihind Enclave, Madhapur,<br> Hyderabad, Telangana 500081<br><b>Tel: +91 40 67172036</b></p>', 17.3850, 78.4867, 1],
+      ['<h5 style="color:black"><b>Business Office</b></h5><p style="color:black;">No 6-1,G.K.Sundaram Street,K.K.Pudur,<br>Sai baba Colony,Coiambatore,<br>TamilNadu-641038<br><b>Ph: 9962837389 <br>Tel: +91 422 49 52646</b></p>', 11.0168, 76.9558, 6],
+    // ['<h5 style="color:black">Pune</h5>', 18.5204, 73.8567, 7]
+    
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: new google.maps.LatLng(22.9734, 78.6569),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) { 
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+
+     
+      
+
+<div>
+<footer id="foo" style="margin-top: 0px;">
+  <div class="inner-footer">
+    <div class="container">
+      <div class="row" >
+        <h1 class="widgetheading text-center" style="color:white;padding-bottom:-30px;">We are also providing solutions</h1>
+          <div class="col-md-2 l-posts col-xs-12" style="float: left;">
+            <h3 class="widgetheading"><a href="ipr.html">IPR Services</a></h3>
+              <div>
+                <ul class="sidebar" style="list-style-type: none; font-size: 17px; line-height: 32px; font-weight: 700;" id="trademark">
+                  <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="trademark.html">Trademark</a></li>
+                  <li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="patent.html">Patent</a></li>
+                  <li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"><a href="copyright.html">Copyright</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 l-posts col-xs-12" style="float: left;">
+              <h3 class="widgetheading">Corporate services</h3>
+                <div>
+                  <ul class="sidebar" style="list-style-type: none; font-size: 17px; line-height: 32px; font-weight: 700; margin-left: -40px" id="trademark">
+                    <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">Company Incorporation</a></li>
+                    <li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="#">LLP Services </a></li>
+                    <li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"><a href="#">Project Reports </a></li>
+                    <li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"><a href="#">IEC codes</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 l-posts col-xs-12">
+                <h3 class="widgetheading">Registration Services</h3>
+                  <div>
+                    <ul>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">Partnership Firm Registration </a></li>
+                      <li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="#">Labour Registration</a></li>
+                      <li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"><a href="#">SME Registration</a></li>
+                      <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><a href="#">PF Registration</a></li>
+                      <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><a href="#">ESI Registration</a></li>
+                      <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><a href="#">Professional Tax Registration</a></li>
+                      <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><a href="#">GST Registration</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-2 l-posts col-xs-12">
+                 <h3 class="widgetheading">Supporting Services</h3>
+                  <div>
+                   <ul>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">PF</a></li>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">PT</a></li>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">GST</a></li>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom -item-object-custom menu-item-187"><a href="#">ESI</a></li>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">TDS RETURNS On Monthly Basis</a></li>
+                    </ul>
+                   </div>
+                  </div>
+                  <div class="col-md-2 l-posts col-xs-12">
+                    <h3 class="widgetheading">Filings</h3>
+                      <div>
+                        <ul>
+                          <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">Tax Audits Reports</a></li>
+                          <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">Income Tax Return Filing</a></li>
+                          <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">Roc Filings</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                <div >
+                <div class="last-div">
+                  <div class="container1">
+                    <div class="row" style="margin-left: 50px">
+                      <div class="copyright"> DelveIP  |
+                        <ul class="social-network">
+                          <li><a href="https://www.facebook.com/DelveIPServices/" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
+                          <li><a href="https://twitter.com/DelveIp" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
+                          <li><a href="https://www.linkedin.com/company/delveip/" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
+                          <li><a href="https://in.pinterest.com" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
+                          <li><a href="https://info@delveip.com " data-placement="top" title="Google"><i class="fa fa-google-plus fa-1x"></i></a></li>
+                        </ul>
+                      </div>
+                      <h5 style="color: white; float: right; margin-top: 5px;margin-right: 20px">Developed By Epitychis Info Labs Pvt. Ltd.</h5>
+                    </div>
+                  </div>
+                </div>
+            </footer>
+
+
+</div>
+
+
+
+
+
+
+  <!-- Latest compiled and minified JavaScript -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+         <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+      <!--   <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+         -->
+
+    </body>
+</html>

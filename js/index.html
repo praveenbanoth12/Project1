@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Fullscreen Background Image Slideshow with CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main-style.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+        .dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
+      </style>
+    </head>
+    <body>
+   	    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+          <a class="navbar-brand" href="index.html"><img src="images/logo-1.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <!--dropdown-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+              <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+              	<!-- dropdown-->
+		        <li class="dropdown-submenu">
+		         <a tabindex="-1" href="#">IPR Services</a>
+		          <ul class="dropdown-menu">
+		           <li><a tabindex="-1" href="trademark.html">Trademark</a></li>
+		         <!-- <li class="dropdown-submenu">
+		             <a href="#">Even More..</a>
+			           <ul class="dropdown-menu">
+			             <li><a href="#">3rd level</a></li>
+			             <li><a href="#">3rd level</a></li>
+			            </ul>
+			         </li> 
+			     -->
+			        <li><a href="patent.html">Patent</a></li>
+					<li><a href="copyright.html">Copyright</a></li>
+			       </ul>
+     			 </li> 
+     			 <!-- dropdown-->
+     			 <li class="dropdown-submenu">
+		         <a tabindex="-1" href="#">Corporate Services</a>
+		          <ul class="dropdown-menu">
+		           <li><a tabindex="-1" href="#">Company<br>Incorporation</a></li>
+		        <!-- <li class="dropdown-submenu">
+		             <a href="#">Even More..</a>
+			           <ul class="dropdown-menu">
+			             <li><a href="#">3rd level</a></li>
+			             <li><a href="#">3rd level</a></li>
+			            </ul>
+			         </li> 
+			     -->
+			        <li><a href="#">LLP Services</a></li>
+					<li><a href="#">Project Reports</a></li>
+					<li><a href="#">IEC Codes</a></li>
+			       </ul>
+     			 </li>
+		        <!-- dropdown-->
+		        <li class="dropdown-submenu">
+		         <a tabindex="-1" href="#">Registration Services</a>
+		          <ul class="dropdown-menu">
+		           <li><a tabindex="-1" href="#">Partership Firm <br>Registration</a></li>
+		      <!-- <li class="dropdown-submenu">
+		             <a href="#">Even More..</a>
+			           <ul class="dropdown-menu">
+			             <li><a href="#">3rd level</a></li>
+			             <li><a href="#">3rd level</a></li>
+			            </ul>
+			         </li> 
+			     -->
+			     	<li><a href="#">Labour Registration</a></li>
+					<li><a href="#">SME Registration</a></li>
+					<li><a href="#">PF Registration</a></li>
+					<li><a href="#">ESI Registration</a></li>
+					<li><a href="#">Professional Tax<br>Registration</a></li>
+					<li><a href="#">GST Registration</a></li>
+			       </ul>
+     			 </li>
+     			 <!-- dropdown-->
+     			 <li class="dropdown-submenu">
+		         <a tabindex="-1" href="#">Supporting Services</a>
+		          <ul class="dropdown-menu">
+		           <li><a tabindex="-1" href="#">PF</a></li>
+		         <!-- <li class="dropdown-submenu">
+		             <a href="#">Even More..</a>
+			           <ul class="dropdown-menu">
+			             <li><a href="#">3rd level</a></li>
+			             <li><a href="#">3rd level</a></li>
+			            </ul>
+			         </li> 
+			     -->
+			        <li><a href="#">PT</a></li>
+					<li><a href="#">GST</a></li>
+					<li><a href="#">ESI</a></li>
+					<li><a href="#">TDS RETURNS On<br>Monthly Basis</a></li>
+
+			       </ul>
+     			 </li>
+     			 <!-- dropdown-->
+     			 <li class="dropdown-submenu">
+		         <a tabindex="-1" href="#">Filings</a>
+		          <ul class="dropdown-menu">
+		           <li><a tabindex="-1" href="#">Tax Audits Reports</a></li>
+		      <!-- <li class="dropdown-submenu">
+		             <a href="#">Even More..</a>
+			           <ul class="dropdown-menu">
+			             <li><a href="#">3rd level</a></li>
+			             <li><a href="#">3rd level</a></li>
+			            </ul>
+			         </li> 
+			     -->
+			        <li><a href="#">Income Tax<br>Return Filing</a></li>
+					<li><a href="#">Roc Filings</a></li>
+			       </ul>
+     			 </li>
+     			 <!-- dropdown--><!-- dropdown-->
+      			</ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+             <li><a href="#tzx">Get a quote</a></li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+   <!--Carousel-fade-->
+        <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">  
+                
+            </div>
+            <div class="item"> 
+               
+            </div>
+            <div class="item"> 
+                
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--End of Carousel-fade-->
+    <!--
+        	<div id="tzx" class="jumbotron">
+        		<h1 class="text-center"> DelveIP</h1>
+        	</div>
+  -->
+
+
+    <div class="bg-img"  ></div>
+     <div class="overlay">
+        <h1  id="tz" class="text-center" style="font-size: 50px;">About Us</h1>
+        <div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3" style="visibility: hidden;"></div>
+                     <div class="col-md-6">
+                    <p>DelveIP is a full administration Intellectual Property (IP) firm in India. The organizers and colleagues acquire over 23 years of perfection in different verticals and IP benefits in India and abroad.</p>
+                    <p>We offer arrangements in the zones of IP Protection, IP research and IP commercialization. Our answers cover the whole range of IP lifecycle.</p>
+                    <p>We have spearheaded innovation stages for conveying IP administrations. Our innovation ability guarantees that we can scale according to our customer and by staying adaptable in satisfying their prerequisites.</p>
+                    <p>We guarantee privacy of our customer data through top of the line innovation measures, and solid lawful instruments. We secure computerized data through solid information encryption and excess measures.</p></div>
+                     <div class="col-md-3" style="visibility: hidden;"></div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <section id="strip-1">
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" style="color: #ffffff;">We Are Into</h1>
+                </div>
+            </div>
+             
+         </div>
+     </section>
+
+      <div class="container" style="padding-top: 20px;">
+        <div class="row">
+            <div class="content">
+                <div class="col-md-4">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+                        <div class="align-center">
+                            <h4 style="margin-top: 45px;">Trademark</h4>
+                            <div class="icon">
+                                <i class="fa fa-trademark" style="font-size: 46px"></i>
+                            </div>
+
+                            <p>
+                                For more
+                                <br>
+                                Trademark related information
+                            </p>
+                            <div class="ficon">
+                                <a href="trademark.aspx"><b>Click here</b></a></> <i class="fa fa-long-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="1.2s">
+                        <div class="align-center">
+                            <h4 style="margin-top: 45px;">Patent</h4>
+                            <div class="icon">
+                                <i class="fa fa-lightbulb-o" style="font-size: 46px"></i>
+
+                            </div>
+
+                            <p>
+                                For more
+                                <br>
+                                Patent related information
+                            </p>
+                            <div class="ficon">
+                                <a href="patent.aspx"><b>Click here</b></a> <i class="fa fa-long-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.8s">
+                        <div class="align-center">
+                            <h4 style="margin-top: 45px;">Copyright</h4>
+                            <div class="icon">
+                                <i class="fa fa-copyright" style="font-size: 46px"></i>
+
+                            </div>
+                            <p>
+                                For more<br>
+                                Copyright related information
+                            </p>
+                            <div class="ficon">
+                                <a href="copyright.aspx"><b>Click here</b></a> <i class="fa fa-long-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2" style="visibility: hidden;"></div>
+                <div class="col-md-4">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.8s">
+                        <div class="align-center">
+                            <h4 style="margin-top: 45px;">Copyright</h4>
+                            <div class="icon">
+                                <i class="fa fa-copyright" style="font-size: 46px"></i>
+
+                            </div>
+                            <p>
+                                For more<br>
+                                Copyright related information
+                            </p>
+                            <div class="ficon">
+                                <a href="copyright.aspx"><b>Click here</b></a> <i class="fa fa-long-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.8s">
+                        <div class="align-center">
+                            <h4 style="margin-top: 45px;">Copyright</h4>
+                            <div class="icon">
+                                <i class="fa fa-copyright" style="font-size: 46px"></i>
+
+                            </div>
+                            <p>
+                                For more<br>
+                                Copyright related information
+                            </p>
+                            <div class="ficon">
+                                <a href="copyright.aspx"><b>Click here</b></a> <i class="fa fa-long-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2" style="visibility: hidden;"></div>
+            </div>
+        </div>
+    </div>
+
+
+ <section id="strip-1">
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center" style="#ffffff;">Our Partners</h1>
+                </div>
+            </div>
+             
+         </div>
+     </section>
+
+
+<div id="our-partners" class="container" style="">
+    <div class="row">
+      <div class="content">
+        <div class="col-md-4">
+          <div style="background-color: ">
+            <a href="http://www.rucapillanip.com/"><img class="boom img-responsive" src="images/imageedit_1_7363330554.png" ></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <a href=""><img class="boom img-responsive" src="images/imageedit_4_7091766010.png" ></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div>
+            <a href="http://www.bythestartups.com/"><img class="boom img-responsive" src="images/imageedit_6_4558141507.png" ></a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+<footer id="foo" style="margin-top: 0px;">
+  <div class="inner-footer">
+    <div class="container">
+      <div class="row">
+        <h1 class="widgetheading text-center" style="color:white;padding-bottom:-30px;">We are also providing solutions</h1>
+          <div class="col-md-2 l-posts col-xs-12" style="float: left;">
+            <h3 class="widgetheading">IPR Services</h3>
+              <div>
+                <ul class="sidebar" style="list-style-type: none; font-size: 17px; line-height: 32px; font-weight: 700;" id="trademark">
+                  <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="Trademark.aspx">Trademark</a></li>
+                  <li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="patent.aspx">Patent</a></li>
+                  <li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"><a href="Copyright.aspx">Copyright</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-2 l-posts col-xs-12" style="float: left;">
+              <h3 class="widgetheading">Corporate services</h3>
+                <div>
+                  <ul class="sidebar" style="list-style-type: none; font-size: 17px; line-height: 32px; font-weight: 700;" id="trademark">
+                    <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">Company Incorporation</a></li>
+                    <li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="#">LLP Services </a></li>
+                    <li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"><a href="#">Project Reports </a></li>
+                    <li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"><a href="#">IEC codes</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 l-posts col-xs-12">
+                <h3 class="widgetheading">Registration Services</h3>
+                  <div>
+                    <ul>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">Partnership Firm Registration </a></li>
+                      <li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="#">Labour Registration</a></li>
+                      <li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"><a href="#">SME Registration</a></li>
+                      <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><a href="#">PF Registration</a></li>
+                      <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><a href="#">ESI Registration</a></li>
+                      <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><a href="#">Professional Tax Registration</a></li>
+                      <li id="menu-item-190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-190"><a href="#">GST Registration</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-2 l-posts col-xs-12">
+                 <h3 class="widgetheading">Supporting Services</h3>
+                  <div>
+                   <ul>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">PF</a></li>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">PT</a></li>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">GST</a></li>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom -item-object-custom menu-item-187"><a href="#">ESI</a></li>
+                      <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">TDS RETURNS On Monthly Basis</a></li>
+                    </ul>
+                   </div>
+                  </div>
+                  <div class="col-md-2 l-posts col-xs-12">
+                    <h3 class="widgetheading">Filings</h3>
+                      <div>
+                        <ul>
+                          <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">Tax Audits Reports</a></li>
+                          <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">Income Tax Return Filing</a></li>
+                          <li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="#">Roc Filings</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="last-div">
+                  <div class="container">
+                    <div class="row">
+                      <div class="copyright">Copyrights © 2017 DelveIP  |
+                        <ul class="social-network">
+                          <li><a href="https://www.Facebook.com/" data-placement="top" title="Facebook"><i class="fa fa-facebook fa-1x"></i></a></li>
+                          <li><a href="https://www.twitter.com/login" data-placement="top" title="Twitter"><i class="fa fa-twitter fa-1x"></i></a></li>
+                          <li><a href="https://in.linkedin.com" data-placement="top" title="Linkedin"><i class="fa fa-linkedin fa-1x"></i></a></li>
+                          <li><a href="https://in.pinterest.com" data-placement="top" title="Pinterest"><i class="fa fa-pinterest fa-1x"></i></a></li>
+                          <li><a href="https://plus.google.com" data-placement="top" title="Google plus"><i class="fa fa-google-plus fa-1x"></i></a></li>
+                        </ul>
+                      </div>
+                      <h5 style="color: white; float: right; margin-top: 5px">Developed By Epitychis Info Labs Pvt. Ltd.</h5>
+                    </div>
+                  </div>
+                </div>
+            </footer>
+
+
+    
+
+    
+
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+        
+    </body>
+</html>
